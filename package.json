@@ -1,0 +1,23 @@
+{
+  "name": "dsh-plugin-dropbox-reader",
+  "version": "1.0.0",
+  "description": "Browse, search, and read Dropbox files in DeepSeek Harness without downloading them locally.",
+  "license": "MIT",
+  "type": "module",
+  "keywords": ["deepseek-harness", "dsh-plugin", "dropbox"],
+  "exports": {
+    ".": "./lib/index.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "files": ["lib/*.js", "cordis.patch.yml", "locale/*.json", "icon.svg", "README.md"],
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "prepack": "node scripts/build.mjs"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/dsh-tools": ">=0.2.1-rc.5 <1"
+  },
+  "dsh": { "bundle": { "patch": "./cordis.patch.yml" } }
+}

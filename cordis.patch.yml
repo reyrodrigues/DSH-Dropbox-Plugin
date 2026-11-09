@@ -1,0 +1,4 @@
+- insert:
+    - id: dropbox-reader
+      name: 'dsh-plugin-dropbox-reader'
+      config: {}

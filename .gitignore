@@ -1,0 +1,25 @@
+# Dependencies
+node_modules/
+
+# Packed tarballs (npm pack / release artifacts)
+*.tgz
+
+# NOTE: lib/ is intentionally committed so users can install straight from
+# GitHub (github:owner/repo) without a build step. Run `npm run build` before committing.
+
+# Credentials / secrets (never commit Dropbox tokens)
+credentials.json
+pending-signin.json
+.env
+.env.*
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
