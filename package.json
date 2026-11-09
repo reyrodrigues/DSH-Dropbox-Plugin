@@ -3,15 +3,35 @@
   "version": "1.0.0",
   "description": "Browse, search, and read Dropbox files in DeepSeek Harness without downloading them locally.",
   "license": "MIT",
+  "author": "Rey Rodrigues",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/reyrodrigues/DSH-Dropbox-Plugin.git"
+  },
+  "homepage": "https://github.com/reyrodrigues/DSH-Dropbox-Plugin#readme",
+  "bugs": {
+    "url": "https://github.com/reyrodrigues/DSH-Dropbox-Plugin/issues"
+  },
   "type": "module",
-  "keywords": ["deepseek-harness", "dsh-plugin", "dropbox"],
+  "keywords": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "dropbox"
+  ],
   "exports": {
     ".": "./lib/index.js",
     "./locale/*.json": "./locale/*.json",
     "./icon": "./icon.svg",
     "./package.json": "./package.json"
   },
-  "files": ["lib/*.js", "cordis.patch.yml", "locale/*.json", "icon.svg", "README.md"],
+  "files": [
+    "lib/*.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "LICENSE"
+  ],
   "scripts": {
     "build": "node scripts/build.mjs",
     "prepack": "node scripts/build.mjs"
@@ -19,5 +39,9 @@
   "peerDependencies": {
     "@deepseek-ai/dsh-tools": ">=0.2.1-rc.5 <1"
   },
-  "dsh": { "bundle": { "patch": "./cordis.patch.yml" } }
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
 }

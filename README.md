@@ -10,7 +10,7 @@ Access is **read-only**.
 In DeepSeek Harness, open **Plugins → Add plugin**, enter
 
 ```
-dsh-plugin-dropbox-reader
+github:reyrodrigues/DSH-Dropbox-Plugin
 ```
 
 and click **Install**, then **Enable now**. No Node.js, terminal, or Dropbox developer account is needed.
